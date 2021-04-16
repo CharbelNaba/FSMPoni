@@ -40,6 +40,12 @@ The input of `["1", "0", "0", "1", "0"]` would cause us to return `false`, as we
 
 ### Some Tips
 - You shall write your code in JS
+- Here is an example of how the FSM would be called in JS:
+```javascript
+var a = new Automaton();
+// Do anything you need to set up this automaton's states.
+var isAccepted = a.readCommands(["1", "0", "0", "1", "0"]);
+```
 - You start with the bare bones of the Automaton class, as seen in `./src/Automaton`
 - As an aside, the automaton accepts an array of strings, rather than just numbers
 - you may assume you will only be passed valid inputs.
